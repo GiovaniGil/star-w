@@ -1,24 +1,13 @@
 # star-w
 
-## Project setup
+## Instalação
+
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Execução local
+
 ```
 yarn serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
