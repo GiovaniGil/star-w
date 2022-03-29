@@ -1,11 +1,11 @@
 <template>
-  <v-container>
+  <div class="container">
     <section class="mt-5">
-      <input-busca
+      <custom-input-busca
         v-model="search"
         @search="buscar"
         outlined
-        block
+        append-icon="mdi-magnify"
         placeholder="Digite o nome e pressione enter"
         clearable
       />
@@ -23,7 +23,7 @@
         @input="paginar"
       />
     </section>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -37,9 +37,9 @@ export default {
 
   components: {
     Paginador: () => import("@/components/molecules/Paginador.vue"),
-    InputBusca: () => import("@/components/molecules/InputBusca.vue"),
+    CustomInputBusca: () => import("@/components/atoms/CustomInputBusca.vue"),
     ListaPersonagens: () =>
-      import("@/components/organisms/ListaPersonagens.vue"),
+      import("@/components/organisms/CustomListaPersonagens.vue"),
   },
 
   data: () => ({
@@ -82,3 +82,12 @@ export default {
   },
 };
 </script>
+
+<style lang="sass">
+.container
+  max-width: 1335px
+  margin: 0 auto
+
+  section
+    margin-bottom: 2em
+</style>

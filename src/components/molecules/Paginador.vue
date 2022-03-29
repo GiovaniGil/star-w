@@ -41,3 +41,9 @@ export default {
   },
 };
 </script>
+
+<style lang="sass">
+.v-pagination__item--active
+  color: $background !important
+  background-color: $primary !important
+</style>

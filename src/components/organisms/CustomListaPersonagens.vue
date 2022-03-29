@@ -1,14 +1,10 @@
 <template>
   <div class="people-list">
-    <v-row>
-      <v-col
-        cols="12"
-        sm="6"
-        md="4"
-        lg="4"
+    <div class="people-list__row">
+      <div
         v-for="(personagem, indice) in listaPersonagens"
         :key="indice"
-        class="people-details"
+        class="people-list__item"
       >
         <card
           :titulo="personagem.name"
@@ -41,8 +37,8 @@
             />
           </template>
         </card>
-      </v-col>
-    </v-row>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -70,3 +66,20 @@ export default {
   },
 };
 </script>
+
+<style lang="sass">
+.people-list
+  margin: 0 auto
+
+  &__row
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+
+  &__item
+    flex-basis: 33.33%
+    -ms-flex: auto
+    position: relative
+    padding: 1em
+    box-sizing: border-box
+</style>

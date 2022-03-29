@@ -1,0 +1,27 @@
+.dark {
+  --color-primary: #7f8c8d;
+  --color-secondary: #bdc3c7;
+  --color-text: #fff;
+  --color-background: #333;
+  --color-light: rgba(116, 116, 116);
+  font-family: 'Museo Sans Rounded', sans-serif !important;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.light {
+  --color-primary: #2980b9;
+  --color-secondary: #27ae60;
+  --color-text: #333;
+  --color-background: #fff;
+  --color-light: #f5f5f5;
+  font-family: 'Museo Sans Rounded', sans-serif !important;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+$primary: var(--color-primary);
+$secondary: var(--color-secondary);
+$background: var(--color-background);
+$background-light: var(--color-light);
+$color-text: var(--color-text);

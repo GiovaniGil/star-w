@@ -10,6 +10,6 @@ export default [
     name: 'detalhes',
     props: true,
     component: () =>
-      import('@/components/pages/personagens/DetalhesPersonagem.vue'),
+      import('@/components/pages/personagens/CustomDetalhesPersonagem.vue'),
   },
 ];
